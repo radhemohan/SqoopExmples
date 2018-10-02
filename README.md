@@ -9,7 +9,7 @@
 - To verify the imported data in HDFS
 > $ $HADOOP_HOME/bin/hadoop fs -cat /emp/part-m-*
 - if you want to import to target folder then provide below --target-dir parameter to import command
-> --target-dir <new or exist directory in HDFS>
+> --target-dir HDFS path
 - if you want to import subset of data then --where is used with import commond
 > --where “city =’Mumbai’” \
 
@@ -18,4 +18,5 @@
 >--connect jdbc:mysql://localhost/db \
 >--username root \
 >--table employee \ 
+
 >--export-dir /emp/emp_data
